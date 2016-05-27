@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>BOSS--Wang</title>
+
+    {% block head %}
+        <link rel = "shortcut icon" href = "{{url_for('static', filename = 'jerry.ico') }}" type = "image/x-icon">
+        <link rel = "icon" href = "{{url_for('static', filename = 'jerry.ico') }}" type = "imgae/x-icon">
+	{% endblock %}
+</head>
+
+<body background="{{url_for('static', filename = 'mh.gif') }}">
+
+<audio autoplay='autoplay' loop="loop">
+  <source src="{{url_for('static', filename = 'jnpgc.mp3') }}" type="audio/ogg" />
+  Don't support HTML5！
+</audio>
+
+</body>
+
+</html>
