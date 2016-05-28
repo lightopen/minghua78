@@ -1,0 +1,32 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>BOSS--Wang</title>
+
+    {% block head %}
+        <link rel = "shortcut icon" href = "{{url_for('static', filename = 'jerry.ico') }}" type = "image/x-icon">
+        <link rel = "icon" href = "{{url_for('static', filename = 'jerry.ico') }}" type = "imgae/x-icon">
+	{% endblock %}
+<style> 
+body
+{
+background:url({{url_for('static', filename = 'sh.gif') }});
+background-size:200px 300px;
+-moz-background-size:63px 100px; /* 老版本的 Firefox */
+background-repeat:repeat;
+padding-top:80px;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay='autoplay' loop="loop">
+  <source src="{{url_for('static', filename = 'dj.mp3') }}" type="audio/ogg" />
+  Don't support HTML5！
+</audio>
+
+</body>
+
+</html>

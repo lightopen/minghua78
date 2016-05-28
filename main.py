@@ -5,6 +5,10 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return render_template("guichu.html")
+
+@app.route("/shi")
+def shi():
+    return render_template("sh.html")
     
     
 if __name__ == "__main__":
